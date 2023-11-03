@@ -8,14 +8,11 @@ lazy val commonSettings = Seq(
   Compile / doc / sources := Seq.empty // disable doc compile (solves same line problem as above)
 )
 
-lazy val modB = ProjectRef(file("../side-project"), "modB")
-
-lazy val sub = project
-  .in(file("subproject"))
+lazy val modA = project
+  .in(file("mod-a"))
   .settings(commonSettings)
-  .dependsOn(modB)
 
-lazy val main = project
-  .in(file("mainproject"))
-  .dependsOn(sub)
+lazy val modB = project
+  .in(file("mod-b"))
+  .dependsOn(modA)
   .settings(commonSettings)

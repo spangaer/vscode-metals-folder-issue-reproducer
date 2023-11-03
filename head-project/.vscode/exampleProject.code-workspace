@@ -1,15 +1,18 @@
 {
-    "folders": [
-        {
-            "path": ".."
-        },
-		{
-            "path": "../../side-project"
-        },
-    ],
-    "settings": {
-        "files.watcherExclude": {
-            "**/target": true
-        }
-    }
+  "folders": [
+    {
+      "path": ".."
+    },
+    {
+      "path": "../../side-project"
+    },
+  ],
+  "settings": {
+    "files.watcherExclude": {
+      "**/target": true
+    },
+    "metals.bloopSbtAlreadyInstalled": true,
+    "editor.formatOnSave": true,
+    "editor.detectIndentation": false
+  }
 }

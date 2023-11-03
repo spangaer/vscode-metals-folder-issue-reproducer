@@ -1,0 +1,11 @@
+# general
+*.class
+*.log
+
+# vscode files
+metals-local.sbt
+.bloop
+.metals
+.bsp
+local.env
+target
